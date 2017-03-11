@@ -1,0 +1,3 @@
+<templateSet group="user">
+  <template name="rcbe" value="return callback(error);$END$" description="return callback error" toReformat="false" toShortenFQNames="true" />
+</templateSet>
