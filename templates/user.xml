@@ -1,3 +1,52 @@
 <templateSet group="user">
-  <template name="rcbe" value="return callback(error);$END$" description="return callback error" toReformat="false" toShortenFQNames="true" />
+  <template name="rcbe" value="return $callback$($error$);$END$" description="return callback error" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="&quot;callback&quot;" defaultValue="callback" alwaysStopAt="true" />
+    <variable name="error" expression="&quot;error&quot;" defaultValue="error" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="log" value="console.log($var$);$END$" description="console log" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="inspect" value="console.log(require('util').inspect($var$, { depth: null }));$END$" description="inspect" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="dlog" value="console.log('\n\n\n\n\n$description$', $var$);$END$" description="debug log" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="&quot;var&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="&quot;var&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cfunc" value="function $name$($params$, function($err$, $res$) {&#10;    $code$&#10;});$END$" description="function with callback" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="&quot;params&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="err" expression="&quot;err&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="res" expression="&quot;res&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="dreq" value="var $module$ = require($name$);$END$" description="deprecated require" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="&quot;module&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="req" value="const $module$ = require($name$);$END$" description="require" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="&quot;module&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
