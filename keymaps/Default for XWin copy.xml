@@ -2,6 +2,9 @@
   <action id="CompareTwoFiles" />
   <action id="Diff.ShowDiff" />
   <action id="Diff.ShowSettingsPopup" />
+  <action id="EditorAddOrRemoveCaret">
+    <mouse-shortcut keystroke="control button1" />
+  </action>
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="shift ctrl d" />
   </action>
@@ -10,11 +13,18 @@
   <action id="EditorScrollDown" />
   <action id="EditorScrollUp" />
   <action id="FileChooser.GotoDesktop" />
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="ctrl b" />
+  </action>
   <action id="MoveLineDown">
     <keyboard-shortcut first-keystroke="ctrl down" />
   </action>
   <action id="MoveLineUp">
     <keyboard-shortcut first-keystroke="ctrl up" />
+  </action>
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="shift ctrl f10" />
+    <keyboard-shortcut first-keystroke="f10" />
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="ctrl d" />
