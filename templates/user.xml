@@ -35,14 +35,14 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="dreq" value="var $module$ = require($name$);$END$" description="deprecated require" toReformat="false" toShortenFQNames="true">
+  <template name="dreq" value="var $module$ = require('$name$');$END$" description="deprecated require" toReformat="false" toShortenFQNames="true">
     <variable name="module" expression="&quot;module&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="req" value="const $module$ = require($name$);$END$" description="require" toReformat="false" toShortenFQNames="true">
+  <template name="req" value="const $module$ = require('$name$');$END$" description="require" toReformat="false" toShortenFQNames="true">
     <variable name="module" expression="&quot;module&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
