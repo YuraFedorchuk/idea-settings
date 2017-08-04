@@ -4,6 +4,7 @@
       <mapping ext="csv" type="PLAIN_TEXT" />
       <mapping ext="htpasswd" type="PLAIN_TEXT" />
       <mapping ext="default" type="PLAIN_TEXT" />
+      <mapping ext="backup" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
