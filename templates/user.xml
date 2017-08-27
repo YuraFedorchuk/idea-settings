@@ -18,8 +18,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="dlog" value="console.log('\n\n\n\n\n$description$', $var$);$END$" description="debug log" toReformat="false" toShortenFQNames="true">
-    <variable name="description" expression="&quot;var&quot;" defaultValue="" alwaysStopAt="true" />
+  <template name="dlog" value="console.log('\n\n\n\n\n\n', $var$);$END$" description="debug log" toReformat="false" toShortenFQNames="true">
     <variable name="var" expression="&quot;var&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -35,9 +34,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="dreq" value="var $module$ = require('$name$');$END$" description="deprecated require" toReformat="false" toShortenFQNames="true">
+  <template name="dreq" value="var $module$ = require('$module$');$END$" description="deprecated require" toReformat="false" toShortenFQNames="true">
     <variable name="module" expression="&quot;module&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -58,6 +56,12 @@
   </template>
   <template name="else" value="else {&#10;    $statement$&#10;}&#10;$END$" description="else statement" toReformat="false" toShortenFQNames="true">
     <variable name="statement" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ddlog" value="console.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n', $var$);$END$" description="long debug log" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="&quot;var&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
