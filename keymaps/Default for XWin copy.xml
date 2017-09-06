@@ -25,7 +25,9 @@
   <action id="ContextHelp" />
   <action id="Debugger.EditCustomField" />
   <action id="Debugger.EditFrameSource" />
-  <action id="Diff.ShowDiff" />
+  <action id="Diff.ShowDiff">
+    <keyboard-shortcut first-keystroke="ctrl alt q" />
+  </action>
   <action id="Diff.ShowSettingsPopup" />
   <action id="DomCollectionControl.Edit" />
   <action id="DomElementsTreeView.GotoDomElementDeclarationAction" />
